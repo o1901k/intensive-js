@@ -14,6 +14,8 @@ this.name2 =  value2
 }
 const counter5 = new Counter (value, value2)
 
+
+
 Задание 2 – Скопировать объект counter всеми
 возможными способами;
 
@@ -25,6 +27,8 @@ for (let key in counter) { counterCopy2[key] = counter[key]; }
 const counterCopy3 = {...counter}
 
 const counterCopy4 = JSON.parse(JSON.stringify(counter)) 
+
+
 
 Задание 3 – Создать функцию makeCounter всеми описанными и возможными способами;
 
@@ -41,6 +45,8 @@ let makeCounter4 = function counter () {
     
 }
 
+
+
 Бонус
 Задание 1 –
 Написать функцию глубокого сравнения двух объектов:
@@ -55,18 +61,19 @@ const obj2 = { here: { is:
 const deepEqual = (obj1, obj2) => {
 if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false }
     
-    let keysObj1 = Object.keys(obj1);
-    let keysObj2 = Object.keys(obj2);
+let keysObj1 = Object.keys(obj1);
+let keysObj2 = Object.keys(obj2);
 
-    if (keysObj1.length !== keysObj2.length) { return false }
+ if (keysObj1.length !== keysObj2.length) { return false }
     
-    for (let i = 0; i < keysObj1.length; i++) {
+ for (let i = 0; i < keysObj1.length; i++) {
         if (keysObj2.includes(keysObj2[i]) === false) { return false }
         if (typeof obj1[keysObj1[i]] === "object") { return deepEqual(obj1[keysObj1[i]], obj2[keysObj1[i]]) }
         if (obj1[keysObj1[i]] !== obj2[keysObj2[i]]) { return false }
             }
              return true
                  };
+
 
 
 Бонус 
