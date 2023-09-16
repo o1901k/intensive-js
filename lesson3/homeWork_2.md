@@ -21,7 +21,7 @@ this.name2 =  value2
 `const counterCopy = Object.assign({}, counter)`
 
 `const counterCopy2 = {}
-for (let key in counter) { counterCopy2[key] = counter[key]; }`
+for (let key in counter) { counterCopy2[key] = counter[key] }`
 
 `const counterCopy3 = {...counter}`
 
@@ -57,17 +57,17 @@ here: {
   other: "2" }, 
 object: "Y" };`
 
-`const deepEqual = (obj1, obj2) => {   
-if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false }   
-let keysObj1 = Object.keys(obj1);   
-let keysObj2 = Object.keys(obj2);   
-  if (keysObj1.length !== keysObj2.length) { return false }   
-  for (let i = 0; i < keysObj1.length; i++) {   
-        if (keysObj2.includes(keysObj2[i]) === false) { return false }   
-        if (typeof obj1[keysObj1[i]] === "object") { return deepEqual(obj1[keysObj1[i]], obj2[keysObj1[i]]) }  
-        if (obj1[keysObj1[i]] !== obj2[keysObj2[i]]) { return false }   
-            }   
-             return true   
+`const deepEqual = (obj1, obj2) => { <br>
+if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false } <br>  
+let keysObj1 = Object.keys(obj1) <br>  
+let keysObj2 = Object.keys(obj2)  <br> 
+  if (keysObj1.length !== keysObj2.length) { return false } <br>
+  for (let i = 0; i < keysObj1.length; i++) { <br> 
+        if (keysObj2.includes(keysObj2[i]) === false) { return false } <br>
+        if (typeof obj1[keysObj1[i]] === "object") { return deepEqual(obj1[keysObj1[i]], obj2[keysObj1[i]]) } <br>
+        if (obj1[keysObj1[i]] !== obj2[keysObj2[i]]) { return false } <br>
+            } <br>
+             return true <br>
                  };`
 
 ---
