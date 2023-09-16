@@ -57,9 +57,9 @@ here: {
   other: "2" }, 
 object: "Y" };`
 
-`const deepEqual = (obj1, obj2) => { <br>
-if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false } <br>  
-let keysObj1 = Object.keys(obj1) <br>  
+`const deepEqual = (obj1, obj2) => {\
+if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false }\ 
+let keysObj1 = Object.keys(obj1)\
 let keysObj2 = Object.keys(obj2)  <br> 
   if (keysObj1.length !== keysObj2.length) { return false } <br>
   for (let i = 0; i < keysObj1.length; i++) { <br> 
