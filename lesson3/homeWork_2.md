@@ -57,17 +57,17 @@ here: {
   other: "2" }, 
 object: "Y" };`
 
-`const deepEqual = (obj1, obj2) => { \
-if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false } \
-let keysObj1 = Object.keys(obj1); \
-let keysObj2 = Object.keys(obj2); \
-  if (keysObj1.length !== keysObj2.length) { return false } \
-  for (let i = 0; i < keysObj1.length; i++) { \
-        if (keysObj2.includes(keysObj2[i]) === false) { return false } \
-        if (typeof obj1[keysObj1[i]] === "object") { return deepEqual(obj1[keysObj1[i]], obj2[keysObj1[i]]) } \
-        if (obj1[keysObj1[i]] !== obj2[keysObj2[i]]) { return false } \
-            } \
-             return true \
+`const deepEqual = (obj1, obj2) => {   
+if (obj1 === null || obj2 === null || typeof obj1 !== 'object' || typeof obj2 !== 'object') { return false }   
+let keysObj1 = Object.keys(obj1);   
+let keysObj2 = Object.keys(obj2);   
+  if (keysObj1.length !== keysObj2.length) { return false }   
+  for (let i = 0; i < keysObj1.length; i++) {   
+        if (keysObj2.includes(keysObj2[i]) === false) { return false }   
+        if (typeof obj1[keysObj1[i]] === "object") { return deepEqual(obj1[keysObj1[i]], obj2[keysObj1[i]]) }  
+        if (obj1[keysObj1[i]] !== obj2[keysObj2[i]]) { return false }   
+            }   
+             return true   
                  };`
 
 ---
