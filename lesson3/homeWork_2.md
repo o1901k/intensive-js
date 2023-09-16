@@ -1,4 +1,4 @@
-**Задание 1 – Создать объект counter всеми возможными способами**
+Задание 1 – Создать объект counter всеми возможными способами
 ```
 const counter = {
 name: 1,
@@ -16,8 +16,8 @@ this.name2 =  value2
 
 const counter5 = new Counter (value, value2)
 
----
-**Задание 2 – Скопировать объект counter всеми возможными способами**
+
+Задание 2 – Скопировать объект counter всеми возможными способами
 
 const counterCopy = Object.assign({}, counter)
 
@@ -28,8 +28,8 @@ const counterCopy3 = {...counter}
 
 const counterCopy4 = JSON.parse(JSON.stringify(counter))
 
----
-**Задание 3 – Создать функцию makeCounter всеми описанными и возможными способами**
+
+Задание 3 – Создать функцию makeCounter всеми описанными и возможными способами
 
 function makeCounter () {
 }
@@ -43,8 +43,8 @@ let makeCounter3 = () => {
 let makeCounter4 = function counter () {  
 }
 
----
-**Бонус Задание 1 – Написать функцию глубокого сравнения двух объектов:**
+
+Бонус Задание 1 – Написать функцию глубокого сравнения двух объектов:
 
 const obj1 = { 
 here: { 
@@ -71,9 +71,9 @@ let keysObj2 = Object.keys(obj2)
              return true
                  };
 
----
-**Бонус Задание 2 – Развернуть строку в обратном направлении при помощи методов массивов:**
+
+Бонус Задание 2 – Развернуть строку в обратном направлении при помощи методов массивов:
 
 function reverseStr(str) {
   return str.split("").reverse().join("")
-}```
+}
